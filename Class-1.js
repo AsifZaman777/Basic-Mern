@@ -9,14 +9,22 @@ const -> hoisting not possible, redeclaration not possible, reinitialization not
 */
 
 
-function test()
-{
-    if(true)
-        var a = 10;
-        {
-            console.log(a);
-        }
-    console.log(a);
-}
+// redeclaration
+var name = "John";
+var name = "Doe";
+console.log(name);
 
-test();
+
+// reinitialization
+var name = "John";
+name = "Doe";
+console.log(name);
+
+// hoisting
+id=100;
+console.log(id);
+var id;
+
+
+
+
