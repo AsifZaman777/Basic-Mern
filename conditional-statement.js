@@ -46,3 +46,10 @@ switch (day) {
     }
     console.log("End of switch case");
 
+
+
+
+
+
+
+
