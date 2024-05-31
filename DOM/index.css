@@ -1,66 +1,61 @@
-body
-{
-    background-color: #b6dae0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
 }
-
-#addParagraphButton{
-    margin:10px;
-    padding: 10px;
-    background-color: #247d27;
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="time"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+form input[type="submit"] {
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 50%;
-    transition: 0.25s;
 }
-
-#addParagraphButton:hover
-{
-    background-color: #09220a;
-    transform: scale(1.1);
+form input[type="submit"]:hover {
+    background-color: #45a049;
 }
-
-
-#paraGraphContainer
-{
-    margin: 10px;
-    padding: 10px;
-    background-color: #f3ebeb;
-    border-radius: 4px;
-    border: 1px solid #d3d3d3;
-    width: 50%;
-    height: 100px;
-    margin-left: 25%;
+.form-group {
+    margin-bottom: 15px;
 }
-
-
-#removeParagraphButton
-{
-    margin:10px;
-    padding: 10px;
-    background-color: #d11a1a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 50%;
-    transition: 0.25s;
+.form-group-inline {
+    display: flex;
+    align-items: center;
 }
-
-#removeParagraphButton:hover
-{
-    background-color: #6b0b0b;
-    transform: scale(1.1);
+.form-group-inline label {
+    margin: 0 10px 0 0;
 }
-
-
-
-
-
-
-
-
-
-
