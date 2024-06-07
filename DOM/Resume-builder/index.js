@@ -55,6 +55,14 @@ function updatePreview(section, event, id) {
             {
                 previewElement.innerHTML = `<small><a href="mailto:${value}">${value}</a></small>`;
             }
+        else if(section === 'school')
+            {
+                previewElement.innerHTML = `${value}`;
+            }
+        else if(section === 'degree')
+            {
+                previewElement.innerHTML = `<small><strong>${value} </strong></small>`;
+            }
         else {
             previewElement.textContent = value;
         }
