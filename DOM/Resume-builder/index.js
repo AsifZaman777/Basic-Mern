@@ -113,6 +113,7 @@ function addSection(sectionId) {
 
     section.appendChild(inputGroup);
 
+
 }
 
 
