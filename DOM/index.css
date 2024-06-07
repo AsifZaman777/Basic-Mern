@@ -1,61 +1,61 @@
+/* css/style.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fcfcfc;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
-form {
-    background-color: #ffffff;
+
+.layout {
+    background: rgba(245, 209, 209, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(50px);
+    width: 700px;
 }
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
-form input[type="text"],
-form input[type="password"],
-form input[type="email"],
-form input[type="number"],
-form input[type="date"],
-form input[type="time"],
-form textarea,
-form select {
-    width: 100%;
-    padding: 8px;
+
+h1, h2 {
+    text-align: center;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
 }
-form input[type="radio"],
-form input[type="checkbox"] {
+
+input[type="radio"] {
     margin-right: 5px;
 }
-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
+
+.btn input[type="submit"] {
+    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background: rgba(0, 123, 255, 0.7);
+    color: white;
     cursor: pointer;
+    width: 100%;
 }
-form input[type="submit"]:hover {
-    background-color: #45a049;
+
+.btn input[type="submit"]:hover {
+    background: rgba(0, 123, 255, 0.9);
 }
-.form-group {
-    margin-bottom: 15px;
-}
-.form-group-inline {
-    display: flex;
-    align-items: center;
-}
-.form-group-inline label {
-    margin: 0 10px 0 0;
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
 }

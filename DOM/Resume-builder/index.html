@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Builder</title>
+    <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="cv-form">
+                <h2>Personal Information</h2>
+                <div class="input-group" id="personal-info">
+                    <input type="text" placeholder="Name" name="name" oninput="updatePreview('name', event)">
+                    <input type="text" placeholder="Title" name="title" oninput="updatePreview('title', event)">
+                    <input type="email" placeholder="Email" name="email" oninput="updatePreview('email',event)">
+                  
+                </div>
+                
+
+                <h2>Educational Information</h2>
+                <div class="input-group" id="education-info">
+                    <input type="text" placeholder="School" name="school" oninput="updatePreview('school', event)">
+                    <input type="text" placeholder="Degree" name="degree" oninput="updatePreview('degree', event)">
+                </div>
+                <button type="button" onclick="addSection('education-info')">+</button>
+
+                <h2>Experience</h2>
+                <div class="input-group" id="experience-info">
+                    <input type="text" placeholder="Company" name="company" oninput="updatePreview('company', event)">
+                    <input type="text" placeholder="Role" name="role" oninput="updatePreview('role', event)">
+                </div>
+                <button type="button" onclick="addSection('experience-info')">+</button>
+
+                <h2>Research and Publications</h2>
+                <div class="input-group" id="research-info">
+                    <input type="text" placeholder="Title" name="researchTitle" oninput="updatePreview('researchTitle', event)">
+                    <input type="text" placeholder="Description" name="researchDescription" oninput="updatePreview('researchDescription', event)">
+                </div>
+                <button type="button" onclick="addSection('research-info')">+</button>
+            </form>
+        </div>
+        <div class="preview-container">
+            <div id="preview">
+                <h2 id="preview-name"></h2>
+                <p id="preview-title"></p>
+                <p id="preview-email"></p>
+                <p id="preview-school"></p>
+                <p id="preview-degree"></p>
+                <p id="preview-company"></p>
+                <p id="preview-role"></p>
+                <p id="preview-researchTitle"></p>
+                <p id="preview-researchDescription"></p>
+            </div>
+          
+        </div>
+        
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
