@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #b3a5a5;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family:cursive;
+}
+
+.darkLayer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: 0.25s;
+}
+
+.darkLayer:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card>img
+{
+    width: 100%;
+    height: 200px;
+    object-fit:scale-down;
+}
